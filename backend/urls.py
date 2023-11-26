@@ -4,7 +4,8 @@ from rest_framework import routers
 from testServer import views
 
 router = routers.DefaultRouter()
-router.register(r"tests", views.TestView, "test")
+router.register(r"accounts", views.accountView, "account")
+router.register(r"orders", views.orderView, "order")
 
 urlpatterns = [
     path("admin/", admin.site.urls),

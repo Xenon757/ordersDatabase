@@ -1,11 +1,32 @@
 from django.contrib import admin
-from .models import test
+
+from .models import account, order
 
 
-class testAdmin(admin.ModelAdmin):
-    list_display = ("name", "spiceCount")
+class accountAdmin(admin.ModelAdmin):
+    list_display = ("name", "email", "password")
+
+
+class orderAdmin(admin.ModelAdmin):
+    list_display = (
+        "user",
+        "fullName",
+        "rasmalai",
+        "kajuKatli",
+        "chumChum",
+        "besanLadoo",
+        "dahiBhalla",
+        "pindiChole",
+        "stuffedKulcha",
+        "gobhi",
+        "price",
+        "status",
+        "progress",
+        "order_date",
+    )
 
 
 # Register your models here.
 
-admin.site.register(test, testAdmin)
+admin.site.register(account, accountAdmin)
+admin.site.register(order, orderAdmin)

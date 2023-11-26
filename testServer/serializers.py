@@ -1,8 +1,29 @@
 from rest_framework import serializers
-from .models import test
+from .models import account, order
 
 
-class TestSerializer(serializers.ModelSerializer):
+class accountSerializer(serializers.ModelSerializer):
     class Meta:
-        model = test
-        fields = ("id", "name", "spiceCount")
+        model = account
+        fields = ("id", "name", "email", "password")
+
+
+class orderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = order
+        fields = (
+            "id",
+            "user",
+            "fullName",
+            "rasmalai",
+            "kajuKatli",
+            "chumChum",
+            "besanLadoo",
+            "dahiBhalla",
+            "pindiChole",
+            "stuffedKulcha",
+            "gobhi",
+            "price",
+            "status",
+            "progress",
+        )
