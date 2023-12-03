@@ -14,6 +14,7 @@ class orderAdmin(admin.ModelAdmin):
         "rasmalai",
         "kajuKatli",
         "chumChum",
+        "peanutChikki",
         "besanLadoo",
         "dahiBhalla",
         "pindiChole",

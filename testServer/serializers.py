@@ -18,6 +18,7 @@ class orderSerializer(serializers.ModelSerializer):
             "rasmalai",
             "kajuKatli",
             "chumChum",
+            "peanutChikki",
             "besanLadoo",
             "dahiBhalla",
             "pindiChole",

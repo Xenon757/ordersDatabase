@@ -17,6 +17,7 @@ class order(models.Model):
     rasmalai = models.IntegerField(validators=[MinValueValidator(0)])
     kajuKatli = models.IntegerField(validators=[MinValueValidator(0)])
     chumChum = models.IntegerField(validators=[MinValueValidator(0)])
+    peanutChikki = models.IntegerField(validators=[MinValueValidator(0)])
     besanLadoo = models.IntegerField(validators=[MinValueValidator(0)])
     dahiBhalla = models.IntegerField(validators=[MinValueValidator(0)])
     pindiChole = models.IntegerField(validators=[MinValueValidator(0)])
